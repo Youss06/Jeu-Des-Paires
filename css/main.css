@@ -12,6 +12,14 @@ div {
 div img {
   width: 100%;
 }
+h1 {
+  text-align: center;
+}
+
+span {
+  color: red;
+}
+
 @media (min-width: 768px) {
 
 div {
