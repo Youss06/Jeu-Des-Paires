@@ -1,12 +1,30 @@
+/*div {
+  border: 2px;
+  width: 10%;
+}*/
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+div {
+  width: 14%;
+}
+div img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+
 div {
   border: 2px;
-  border-color: black;
-  border-style: double;
+  /*border-color: black;
+  border-style: double;*/
   width: 14%;
-  height: 80%;
+  /*height: 80%;*/
 }
 
 main {
   display: flex;
   flex-wrap: wrap;
+}
+
 }
