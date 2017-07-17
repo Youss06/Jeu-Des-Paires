@@ -1,5 +1,6 @@
 var tab = ["img/52.jpg","img/125.jpg","img/bart.jpg","img/burns.jpg","img/homer.jpg","img/lisa-simpson-profile.jpg","img/margepost1.jpg","img/52.jpg","img/125.jpg","img/bart.jpg","img/burns.jpg","img/homer.jpg","img/lisa-simpson-profile.jpg","img/margepost1.jpg"];
-var precedImg = ""; var precedAttr = "";
+var precedImg = "";
+var precedAttr = "";
 var click = 0;
 
 var partieEnCours = true;
@@ -47,7 +48,7 @@ function retourne(id, name){
 				precedImg = "";
 				click = 0;
 				ready = true;
-			}, 2000);
+			}, 1000);
 		}
 		else if(name.src == precedImg.src && click == 2){
 			click = 0;
