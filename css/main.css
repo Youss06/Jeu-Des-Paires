@@ -6,6 +6,11 @@ main {
   display: flex;
   flex-wrap: wrap;
 }
+
+img:hover {
+  background-color: red;
+}
+
 div {
   width: 14%;
 }
