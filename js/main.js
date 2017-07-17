@@ -25,11 +25,11 @@ function retourne(id, name){
 			switch(id){
 				case i:
 					name.src =tab[i-1];
-					var attr = "retourne("+(i)+", '"+(i)+"')";
+					var relance = "retourne("+(i)+", '"+(i)+"')";
 					name.removeAttribute("onclick");
 					if(click == 0){
 						choix1 = name;
-						choix2 = attr;
+						choix2 = relance;
 						click = 1;
 					}
 					else{
@@ -42,7 +42,7 @@ function retourne(id, name){
 	 		ready = false;
 			setTimeout(function(){
 				name.src = "img/jeu_de_carte_katag_mystere-220x300.png";
-				name.setAttribute("onclick", attr);
+				name.setAttribute("onclick", relance);
 				choix1.src = "img/jeu_de_carte_katag_mystere-220x300.png";
 				choix1.setAttribute("onclick", choix2);
 				choix1 = "";
