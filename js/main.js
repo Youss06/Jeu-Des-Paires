@@ -1,6 +1,6 @@
 var tab = ["img/52.jpg","img/125.jpg","img/bart.jpg","img/burns.jpg","img/homer.jpg","img/lisa-simpson-profile.jpg","img/margepost1.jpg","img/52.jpg","img/125.jpg","img/bart.jpg","img/burns.jpg","img/homer.jpg","img/lisa-simpson-profile.jpg","img/margepost1.jpg"];
-var precedImg = "";
-var precedAttr = "";
+var choix1 = "";
+var choix2 = "";
 var click = 0;
 
 var partieEnCours = true;
@@ -28,8 +28,8 @@ function retourne(id, name){
 					var attr = "retourne("+(i)+", '"+(i)+"')";
 					name.removeAttribute("onclick");
 					if(click == 0){
-						precedImg = name;
-						precedAttr = attr;
+						choix1 = name;
+						choix2 = attr;
 						click = 1;
 					}
 					else{
@@ -38,19 +38,19 @@ function retourne(id, name){
 				break;
 			}
 		}
-	 	if(name.src != precedImg.src && click == 2){
+	 	if(name.src != choix1.src && click == 2){
 	 		ready = false;
 			setTimeout(function(){
 				name.src = "img/jeu_de_carte_katag_mystere-220x300.png";
 				name.setAttribute("onclick", attr);
-				precedImg.src = "img/jeu_de_carte_katag_mystere-220x300.png";
-				precedImg.setAttribute("onclick", precedAttr);
-				precedImg = "";
+				choix1.src = "img/jeu_de_carte_katag_mystere-220x300.png";
+				choix1.setAttribute("onclick", choix2);
+				choix1 = "";
 				click = 0;
 				ready = true;
 			}, 1000);
 		}
-		else if(name.src == precedImg.src && click == 2){
+		else if(name.src == choix1.src && click == 2){
 			click = 0;
 
 		}
