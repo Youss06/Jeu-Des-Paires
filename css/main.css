@@ -1,3 +1,19 @@
+
+
+@font-face {
+  font-family: "simpson";
+	 src: url(../font/simpsonfont/akbar.ttf);
+}
+
+#titre {
+  font-family: "simpson";
+  color: yellow;
+}
+
+body {
+  background-color: black;
+}
+
 /*div {
   border: 2px;
   width: 10%;
